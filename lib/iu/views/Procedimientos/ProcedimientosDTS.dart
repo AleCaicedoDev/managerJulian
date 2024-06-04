@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:managerapp/Provider/Procedimientos/ProcedimientosProvider.dart';
-
 import 'package:managerapp/modelo/Procedimientos/ProcedimientosModels.dart';
 
 class ProcedimientosDTS extends DataTableSource {
@@ -18,7 +16,7 @@ class ProcedimientosDTS extends DataTableSource {
   @override
   DataRow getRow(int index) {
     final procedimientos = procedimiento[index];
-    final size = MediaQuery.of(context).size;
+    // final size = MediaQuery.of(context).size;
 
     return DataRow.byIndex(index: index, cells: [
       DataCell(Text(procedimientos.procedimiento!)),

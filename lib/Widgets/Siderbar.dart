@@ -103,6 +103,14 @@ class Siderbar extends StatelessWidget {
                 isActive: sideMenuProvider.currentPage ==
                     Flurorouter.ubicacionesRoute,
               ),
+              Expanded(child: Container()),
+              MenuItems(
+                text: 'Ubicaciones',
+                icon: Icons.forum_outlined,
+                onPressd: () => _navigateTo(Flurorouter.ubicacionesRoute),
+                isActive: sideMenuProvider.currentPage ==
+                    Flurorouter.ubicacionesRoute,
+              ),
             ],
           )),
     );
